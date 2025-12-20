@@ -1,5 +1,6 @@
 # Image-Anomaly-Detector
 Autoencoder-based image anomaly detection using FastAPI and TensorFlow
+I trained an autoencoder on a single normal class (digit ‘1’) to demonstrate anomaly detection
 
 Image Anomaly Detection API
 
@@ -25,7 +26,9 @@ POST /detect
 
 Example Response
 {
-  "result": "ANOMALOUS",
+  "result": "ANOMALOUS/NORMAL",
   "reconstruction_error": 0.021,
   "threshold": 0.015
 }
+
+
